@@ -1,0 +1,2365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1316</width>
+    <height>707</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#c6ebf9;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="startMenu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>310</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+	border-radius: 25px;
+
+
+</string>
+    </property>
+    <widget class="QPushButton" name="caesarBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Caesar Cipher </string>
+     </property>
+     <property name="index" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="atbashBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Atbash Cipher</string>
+     </property>
+     <property name="index" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="vigenereBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Vigenère Cipher </string>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="substitutionBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>240</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Substitution Cipher </string>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="transpositionBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>300</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Transposition Cipher</string>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="xorBtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>360</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Simple XOR Cipher </string>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rot9Btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>420</y>
+       <width>250</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5b94f9,
+        stop: 1 #2c6df7
+    );
+}
+
+QPushButton:pressed {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2c6df7,
+        stop: 1 #1a4cd8
+    );
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ROT9 Cipher </string>
+     </property>
+     <property name="id" stdset="0">
+      <string>cipherBtn</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>20</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+text-align:center;
+color:white;
+
+</string>
+     </property>
+     <property name="text">
+      <string>Encryption Methods</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>505</y>
+       <width>290</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #8af3ff
+    );
+	border-radius: 25px;
+
+
+</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>520</y>
+       <width>110</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+text-align:center;
+color:white;
+
+</string>
+     </property>
+     <property name="text">
+      <string>Open File</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="open_file">
+     <property name="geometry">
+      <rect>
+       <x>84</x>
+       <y>560</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#open_file {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#open_file:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Open File</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="carsar_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>485</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with Caesar Cipher</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="key">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter a key between 1 and 25</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#encrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#decrypt {
+     color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336, 
+        stop:1 #c62828  
+    );
+}
+
+#decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="key_description">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>440</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+color:#50fd20;</string>
+     </property>
+     <property name="text">
+      <string>To decrypt, please enter the correct key used during encryption</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="caesar_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#caesar_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#caesar_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="atbash_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>234</x>
+       <y>30</y>
+       <width>491</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with Atbash Cipher</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="atbash_output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="atbash_input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="atbash_encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#atbash_encrypt {
+   color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="atbash_decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#atbash_decrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336, 
+        stop:1 #c62828  
+    );
+}
+
+#atbash_decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="atbash_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#atbash_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#atbash_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="vigenere_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>214</x>
+       <y>30</y>
+       <width>521</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with Vigenere Cipher</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="vigenere_output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="vigenere_input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="vigenere_encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#vigenere_encrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#vigenere_encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="vigenere_decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#vigenere_decrypt {
+     color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336, 
+        stop:1 #c62828  
+    );
+}
+
+#vigenere_decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="vigenere_key">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>enter Alphabetical </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="key_description_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>440</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+color:#50fd20;</string>
+     </property>
+     <property name="text">
+      <string>To decrypt, please enter the correct key used during encryption</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="vigenere_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#vigenere_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#vigenere_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="substitution_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>30</y>
+       <width>671</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with Simple Substitution Cipher </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="substitution_output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="substitution_input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="substitution_encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#substitution_encrypt {
+   color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#substitution_encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="substitution_decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#substitution_decrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336,   /* light red */
+        stop:1 #c62828    /* dark red */
+    );
+}
+
+#substitution_decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="substitution_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#substitution_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#substitution_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="transposition_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>30</y>
+       <width>731</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with  Columnar Transposition Cipher</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="transposition_output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="transposition_input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="transposition_encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#transposition_encrypt {
+   color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#transposition_encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="transposition_decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#transposition_decrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336,   /* light red */
+        stop:1 #c62828    /* dark red */
+    );
+}
+
+#transposition_decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="key_description_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>440</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+color:#50fd20;</string>
+     </property>
+     <property name="text">
+      <string>To decrypt, please enter the correct key used during encryption</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="transposition_key">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter alphabetic kay</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="transposition_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#transposition_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#transposition_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="xor_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>30</y>
+       <width>731</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with   Simple XOR Cipher</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="xor_output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xor_input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="xor_encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#xor_encrypt {
+   color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#xor_encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="xor_decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#xor_decrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336,   /* light red */
+        stop:1 #c62828    /* dark red */
+    );
+}
+
+#xor_decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xor_key">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter character or number</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="key_description_4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>440</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+color:#50fd20;</string>
+     </property>
+     <property name="text">
+      <string>To decrypt, please enter the correct key used during encryption</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="xor_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#xor_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#xor_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rot_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>971</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #1995AD, 
+        stop:1 #022932
+    );
+border-radius:25px;</string>
+    </property>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>30</y>
+       <width>731</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Encrypt &amp; Decrypt with ROT9</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="rot_output">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>861</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+border:1px solid white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="margin">
+      <number>25</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="rot_input">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>691</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;
+padding-left:25px;
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Enter message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rot_encrypt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#rot_encrypt {
+   color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4CAF50, 
+        stop:1 #2E7D32   );
+}
+
+#rot_encrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Encrypt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rot_decrypt">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>500</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#rot_decrypt {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f44336,   /* light red */
+        stop:1 #c62828    /* dark red */
+    );
+}
+
+#rot_decrypt:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Decrypt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>message</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rot_save">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#rot_save {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #6a11cb,
+        stop:1 #2575fc
+    );
+}
+
+#rot_save:pressed {
+    background: white;
+    color: #2c6df7;
+    border: 1px solid #2c6df7;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sava Text</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1316</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
