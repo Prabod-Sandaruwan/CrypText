@@ -64,4 +64,4 @@
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/CrypText.git
+   git clone https://github.com/Prabod-Sandaruwan/CrypText.git
